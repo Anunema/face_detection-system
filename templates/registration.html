@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facepay registration</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'C:\Users\Anu Nema\Desktop\facedetect\static\style.css' %} ">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+    </style>
+      
+</head>
+<body>
+        <header>
+                <div class="main">
+                       <div class="logo">
+                              <img src="{% static 'logo1.jpg' %}">
+                       </div>
+                       <ul>
+                           <li ><a href="{% url 'HomePage' %}">HOME</a></li>
+                            <li><a href="{% url 'About' %}">ABOUT FACEPAY</a></li>
+                            <li><a href="{% url 'Login' %}">LOGIN</a></li>
+                            <li class="active"><a href="{% url 'register' %}">REGISTRATION</a></li>
+  
+  
+                       </ul>
+                </div>
+         </header>
+         <!--<h1>Registration Form</h1>-->
+          
+         <div class="register">
+             <h2>SIGNUP</h2>
+             <form method="POST">
+                 <center>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    
+                    <button type="submit">Register</button>
+                    </center>
+                </form>
+             <!--<form method="post" id="register" action="">
+                 
+                 <label> First Name :</label><br>
+                 <input type="text" name="Fname" id="name" placeholder=" Enter First Name"><br><br>
+  
+                 <label> Last Name :</label><br>
+                 <input type="text" name="Fname" id="name" placeholder=" Enter  Last Name"><br><br>
+  
+                 <label> Mobile Number :</label><br>
+                 <select id="ph">
+                     <option>+91</option>
+                     <option>+92</option>
+                     <option>+93</option>
+                     <option>+94</option>
+                     <option>+95</option>
+                 </select>
+                 <input type="number" name="MNum" id="num" placeholder=" Enter  Mobile Number"><br><br>
+  
+                 <label> Email :</label><br>
+                 <input type="Email" name="Fname" id="email" placeholder=" Enter  Email"><br><br>
+  
+                 <!--<label> Adhaar Number :</label><br>
+                 <input type="text" name="Fname" id="name" placeholder=" Enter Adhaar number"><br><br>
+                 <!--<input type=" text" name="ANum" id=" num" placeholder=" Enter  Adhaar Number"><br><br>-->
+                
+                 <!--<label> Password :</label><br>
+                       <input type="radio" name="male" id="male" ><span>&nbsp; text password</span>&nbsp;&nbsp;
+                       <input type="Email" name="Fname" id="email" placeholder=" Enter text password"><br><br>
+                          <input type="radio" name="male" id="male" ><span>&nbsp;face-detection system</span>&nbsp;&nbsp;-->
+            
+    
+</body>
+</html>

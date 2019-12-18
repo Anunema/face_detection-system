@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background-image: url(image.jpg);
+	background-size: 100% 700px;
+	background-repeat: no-repeat;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+}
+h2{
+	text-align: center;
+	padding: 20px;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: -70px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 70px;
+	height: auto;
+		margin-top: -100px;
+
+}
+.register{
+
+	background-color: rgba(126, 123, 215, 0.2);
+		width: 500px;
+		margin:center;
+	margin: 0px 0px 0px 430px;
+	margin-top: 100px;
+	color: black;
+	font-size: 18px;
+	padding: 20px;
+	border-radius: 10px;
+	margin-left: 500px;
+}
+#register{
+
+    margin-left: 50px;
+}
+
+label{
+	color: black;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: italic;
+}
+#ph{
+	width:  65px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+#num{
+	width:  240px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+
+}
+#sub{
+	width:  300px;
+	padding: 7px;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-style: italic;
+	font-weight: 600;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+
+}
+#name{
+	width: 310px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#email{
+	width: 310px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#adhaar {
+	width: 310px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+.btn{
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 15px;
+	width: 120px;
+	height: 30px;
+	border-radius: 30px;
+	line-height: 40px;
+	text-align: center;
+	border:5px solid #696969;
+	display: block;
+
+
+}
+

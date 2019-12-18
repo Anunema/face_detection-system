@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>facepay</title>
+	<meta charset="utf`-8">
+  <meta name="viewport" content="width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'C:\Users\Anu Nema\Desktop\facedetect\static\style2.css' %} ">
+	<link href="css/global.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+    
+    body{
+
+      background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)) ,url("{% static 'web3.jpg' %}") ; 
+     height: 100%;
+     width: 100%;
+  background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+ 
+  
+  
+    }
+  </style>
+	
+</head>
+<body>
+    <header>
+        <div class="main">
+               <div class="logo">
+                      <img src="{% static 'logo1.jpg' %}">
+               </div>
+               <ul>
+                   <li ><a href="{% url 'HomePage' %}">HOME</a></li>
+                    <li><a href="{% url 'About' %}">ABOUT FACEPAY</a></li>
+                    <li class="active"><a href="{% url 'Login' %}">LOGIN</a></li>
+                    <li><a href="{% url 'register' %}">REGISTRATION</a></li>
+
+
+               </ul>
+        </div>
+ 
+  
+ <!-- <div class="container">
+      <div class="view" style="bacground-color:#F0F0F0; background-repeat: no-repeat; background-size: cover;"-->
+
+       </div>
+    
+  <center>
+    <div class="container">
+    
+  <!--style="background-image: url('image3.jpg'); background-repeat: repeat; background-size:cover; background-position:  center;"-->s
+   <div class="view" style="background-color:rgba(240, 240, 240, 0.842); background-repeat: no-repeat; background-size: cover;"
+> <center>
+  
+     <h1 style="color:black;">Login Form</h1>
+     </center>
+    
+     	<div class="row">
+     		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+     		<div class="col-mid-4 col-sm-4 col-xs-12">
+             <!--form start-->
+                    
+                <form method="POST">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  <input type="submit" value="Login">
+         </form>
+        </header>
+               
+      
+           
+             <!--form end-->
+           
+
+           </div>
+         </div>
+         </center>
+         
+     		<div class="col-md-4 col-xs-12">
+     	</div>
+     </div>
+   </div>
+ </div>
+ <main>
+          <div class="container">
+            <!--Grid row-->
+            <div class="row py-5">
+              <!--Grid column-->
+              <div class="col-md-12 text-center">
+                
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+
+        </main>
+        <!--Main Layout-->
+</body>
+</html>

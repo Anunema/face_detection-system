@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Facepay </title>
+       <link rel="stylesheet" type="text/css" href="{% static 'C:/Users/Anu Nema/Desktop/facedetect/static/style_home.css' %} ">
+
+</head>
+<body>
+       <header>
+              <div class="main">
+                     <div class="logo">
+                            <img src="{% static 'logo1.jpg' %}">
+                     </div>
+                     <ul>
+                            <li class="active"><a href="{% url 'HomePage' %}">HOME</a></li>
+                            
+                            <li><a href="{% url 'About' %}">ABOUT FACEPAY</a></li>
+                            <li><a href="{% url 'Login' %}">LOGIN</a></li>
+                            <li><a href="{% url 'register' %}">REGISTRATION</a></li>
+                     </ul>
+                     <div class="title">
+                            <h1> Welcome Facepay</h1>
+                     </div>
+       </header>
+       </body>
+       </html>
